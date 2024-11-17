@@ -20,9 +20,16 @@ void Car::setModel(const string &newModel)
     model = newModel;
 }
 
-string Car::getYearModel() const
+void Car::carinfo()
 {
-    return yearModel;
+    cout<<"Merkki:"<<brand<<" Malli:"<<model<<" Vuosimalli:"<<yearModel<<endl;
 }
 
 Car::Car() {}
+
+Car::Car(string n, string m, int y)
+{
+    brand=n;
+    model=m;
+    yearModel=y;
+}
